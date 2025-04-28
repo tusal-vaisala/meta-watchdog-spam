@@ -1,0 +1,10 @@
+[Unit]
+Description=Watchdog spammer
+
+[Service]
+Type=notify
+ExecStart=/usr/sbin/notify-spammer
+WatchdogSec=10
+
+[Install]
+WantedBy=multi-user.target
